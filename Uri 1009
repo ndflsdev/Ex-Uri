@@ -20,7 +20,7 @@ public class Main {
 
 	    total = salario + vendas * 0.15;
 
-	    System.out.printf("TOTAL = %.2f%n",total);
+	    System.out.printf("TOTAL = R$ %.2f%n",total);
 	    
 		
 		sc.close();
