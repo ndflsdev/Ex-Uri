@@ -3,24 +3,24 @@ import java.util.Scanner;
 
 public class Main {
 
+
 	public static void main(String[] args) {
-		Locale.setDefault(Locale.US);		
+
+		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
 		int numero, horas;
-		double valorHora, salario;
-		
-		numero = sc.nextInt();
+	    double valorHora, salario;
+
+	    numero = sc.nextInt();
 	    horas = sc.nextInt();
 	    valorHora = sc.nextDouble();
-		
-		
-		salario = valorHora * horas;
-	
-	System.out.println("NUMBER = " + numero);
-	System.out.println("SALARY = " + salario);
 
-	sc.close();
+	    salario = valorHora * horas;
+
+	    System.out.println("NUMBER = " + numero);
+	    System.out.printf("SALARY = U$ %.2f%n", salario);
+		
+		sc.close();
 	}
-
 }
