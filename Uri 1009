@@ -1,0 +1,28 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		double salario , vendas, total;
+	    String nome;
+	    
+	    
+	     nome = sc.next();
+	    salario = sc.nextDouble();
+	    vendas = sc.nextDouble();
+	  
+
+	    total = salario + vendas * 0.15;
+
+	    System.out.printf("TOTAL = %.2f%n",total);
+	    
+		
+		sc.close();
+	}
+}
